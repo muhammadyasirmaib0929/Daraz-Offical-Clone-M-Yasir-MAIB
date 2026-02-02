@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <title>Daraz.pk Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Top Header -->
+  <header class="fixed top-0 left-0 w-full bg-orange-500 text-white text-[12px] z-50">
+    <ul class="flex flex-wrap justify-end items-center gap-4 py-1 px-6">
+      <li class="hover:text-yellow-300 cursor-pointer">SAVE MORE ON APP</li>
+      <li class="hover:text-yellow-300 cursor-pointer">SALE DARAZ</li>
+      <li class="hover:text-yellow-300 cursor-pointer">HELP & SUPPORT</li>
+      <li class="hover:text-yellow-300 cursor-pointer">LOGIN</li>
+      <li class="hover:text-yellow-300 cursor-pointer">SIGN UP</li>
+      <li class="hover:text-yellow-300 cursor-pointer">Change Language</li>
+    </ul>
+  </header>
+
+  <!-- Fake Header Space -->
+  <div class="h-[25px]"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="fixed top-[25px] left-0 w-full bg-orange-500 flex flex-col md:flex-row md:items-center md:justify-between px-6 py-4 z-40">
+    <div class="flex items-center gap-4">
+      <!-- Logo -->
+      <div class="w-[120px] md:w-[150px] cursor-pointer">
+        <img src="3b870cb043c7f8a9741cbf66329e294e.png" alt="Daraz Logo" class="w-full h-auto">
+      </div>
+      <!-- Search Bar -->
+      <div class="flex bg-white items-center rounded-md overflow-hidden w-full max-w-[500px]">
+        <input type="text" placeholder="Search in Daraz" class="w-full px-3 py-2 text-gray-500 text-sm focus:outline-none">
+        <div class="text-orange-500 bg-orange-100 p-2 text-xl cursor-pointer"><i class="ri-search-line"></i></div>
+      </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="flex justify-center md:justify-end mt-3 md:mt-0 text-white text-2xl cursor-pointer">
+      <i class="ri-shopping-cart-line"></i>
+    </div>
+  </nav>
+
+  <!-- Fake Navbar Space -->
+  <div class="h-[90px] md:h-[130px]"></div>
+
+    <!-- Section One - Main Banner -->
+  <section class="w-full flex justify-center px-4">
+    <div class="w-full max-w-[1200px] h-auto rounded-lg overflow-hidden shadow-md cursor-pointer">
+      <img src="daraz img.jpg" alt="Main Banner" class="w-full h-auto object-cover">
+    </div>
+  </section>
+
+  <!-- Section Two - Sub Banner -->
+  <section class="w-full flex justify-center px-4 mt-4">
+    <div class="w-full max-w-[1200px] h-auto rounded-lg overflow-hidden shadow-md cursor-pointer">
+      <img src="daraz img2.jpg" alt="Sub Banner" class="w-full h-auto object-cover">
+    </div>
+  </section>
+
+  <!-- Flash Sale Title -->
+  <section class="w-full mt-6 px-6">
+    <p class="text-2xl font-semibold text-gray-800">Flash Sale</p>
+    <div class="flex flex-col sm:flex-row justify-between items-center bg-white border-b border-gray-300 mt-3 py-3 px-4 rounded-md shadow-sm">
+      <small class="text-orange-500 font-bold text-sm sm:text-base">On Sale Now</small>
+      <button class="text-orange-500 border border-orange-500 rounded-md px-4 py-1 text-sm sm:text-base hover:bg-orange-500 hover:text-white transition-all duration-300">
+        SHOW ALL PRODUCTS
+      </button>
+    </div>
+  </section>
+
+    <!-- 🟠 Section Four - Product Grid -->
+  <section class="w-full flex justify-center px-4 mt-6">
+    <div class="w-full max-w-[1200px] bg-white rounded-lg shadow-md p-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
+          <img src="img01.jpg" alt="Product 1" class="w-full h-40 object-cover">
+          <div class="p-2">
+            <p class="text-sm text-gray-800 leading-tight mb-1">Chia Seeds 120g Organic Export Quality</p>
+            <p class="text-orange-500 font-semibold">Rs.196</p>
+            <p class="text-xs text-gray-500"><del>Rs.499</del> <span class="text-orange-500">-61%</span></p>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
+          <img src="9ada4627a1293b0543cb26c35373e70c.png_400x400q80.png" alt="Product 2" class="w-full h-40 object-cover">
+          <div class="p-2">
+            <p class="text-sm text-gray-800 leading-tight mb-1">CHiQ- SDH-18RD (20,000 Plus More BTUs)- 1.5 Ton</p>
+            <p class="text-orange-500 font-semibold">Rs.145,999</p>
+            <p class="text-xs text-gray-500"><del>Rs.193,999</del> <span class="text-orange-500">-25%</span></p>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
+          <img src="img2.png" alt="Product 3" class="w-full h-40 object-cover">
+          <div class="p-2">
+            <p class="text-sm text-gray-800 leading-tight mb-1">Airpod Pro Air Pro TWS Airpods Wireless Earbuds</p>
+            <p class="text-orange-500 font-semibold">Rs.929</p>
+            <p class="text-xs text-gray-500"><del>Rs.3999</del> <span class="text-orange-500">-77%</span></p>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
+          <img src="img3.jpg" alt="Product 4" class="w-full h-40 object-cover">
+          <div class="p-2">
+            <p class="text-sm text-gray-800 leading-tight mb-1">M10 , A6s , F2 earbuds Headphones, Handfree, EarPhone, Bluetooth</p>
+            <p class="text-orange-500 font-semibold">Rs.374</p>
+            <p class="text-xs text-gray-500"><del>Rs.999</del> <span class="text-orange-500">-63%</span></p>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
+          <img src="img4.jpg" alt="Product 5" class="w-full h-40 object-cover">
+          <div class="p-2">
+            <p class="text-sm text-gray-800 leading-tight mb-1">AirPods_Pro (2nd Generation) Titanium Wireless Earbuds</p>
+            <p class="text-orange-500 font-semibold">Rs.787</p>
+            <p class="text-xs text-gray-500"><del>Rs.4000</del> <span class="text-orange-500">-80%</span></p>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="bg-white rounded-md overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
+          <img src="img5.jpg" alt="Product 6" class="w-full h-40 object-cover">
+          <div class="p-2">
+            <p class="text-sm text-gray-800 leading-tight mb-1">TWS I12 & i7s Airpods with Super Sound & High</p>
+            <p class="text-orange-500 font-semibold">Rs.1243</p>
+            <p class="text-xs text-gray-500"><del>Rs.3999</del> <span class="text-orange-500">-69%</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- 🟠 Section Five - Categories -->
+  <section class="w-full mt-10 px-4">
+    <p class="text-2xl font-semibold text-gray-800 mb-4">Categories</p>
+
+    <div class="w-full max-w-[1200px] mx-auto bg-white rounded-lg shadow-md p-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+
+        <!-- Category 1 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="ed.jpg" alt="3D Printers" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">3D Printers</p>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="pasta.jpg" alt="Pasta Tools" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Passta Noodles & Pizza Tools</p>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="pots.jpg" alt="Casserole Pots" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Casserole Pots</p>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="replace.png" alt="Replacement" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Replacement</p>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="screen.jpg" alt="Screen Protector" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Screen Protector</p>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="toy.jpg" alt="Toy Boxes" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Toy Boxes & Organisers</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- 🟠 Section Six - More Categories -->
+  <section class="w-full mt-10 px-4">
+    <div class="w-full max-w-[1200px] mx-auto bg-white rounded-lg shadow-md p-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+
+        <!-- Item 1 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="sim.jpg" alt="SIM Tools" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">SIM Tools</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="equ.jpg" alt="Equipment Bags" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Equipment Bags</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="heat.jpg" alt="Heatsinks" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Heatsinks</p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="hoodies.jpg" alt="Hoodies" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Hoodies & Sweatshirts</p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="ds.jpg" alt="Dining Sets" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Dining Sets</p>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="flex flex-col items-center border border-gray-200 rounded-md p-3 hover:shadow-md transition cursor-pointer">
+          <div class="w-[90px] h-[90px] mb-2 overflow-hidden rounded-md">
+            <img src="micro.jpg" alt="Microphones" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-700 text-center">Microphones</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- 🟠 Section Seven - Load More Button -->
+  <section class="w-full flex justify-center mt-10 px-4">
+    <button class="text-sky-500 border border-sky-400 px-8 py-2 rounded-md text-base font-medium hover:bg-sky-500 hover:text-white transition-all duration-300">
+      LOAD MORE
+    </button>
+  </section>
+
+    <!-- 🟠 Section Seven - Load More Button (Improved) -->
+  <section class="w-full flex justify-center mt-12 px-4">
+    <button class="text-sky-500 border border-sky-400 px-10 py-3 rounded-lg text-base font-medium 
+                   hover:bg-sky-500 hover:text-white hover:shadow-md transition-all duration-300">
+      LOAD MORE
+    </button>
+  </section>
+
+  <!-- 🟠 Section Last - Footer Information (Improved Design) -->
+  <section class="w-full mt-16 bg-white py-10 shadow-inner">
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between flex-wrap gap-10 px-6">
+
+      <!-- Customer Care -->
+      <div class="flex-1 min-w-[250px]">
+        <h3 class="text-lg font-semibold mb-3 text-gray-900 border-b-2 border-orange-500 w-max pb-1">
+          Customer Care
+        </h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="hover:text-orange-500 cursor-pointer transition">Help Center</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">How To Buy</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Contact Us</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Daraz Pick Up Points</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Daraz Shop</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Purchase Protection</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Returns & Refunds</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Corporate & Bulk Purchasing</li>
+        </ul>
+      </div>
+
+      <!-- Daraz Info -->
+      <div class="flex-1 min-w-[250px]">
+        <h3 class="text-lg font-semibold mb-3 text-gray-900 border-b-2 border-orange-500 w-max pb-1">
+          Daraz
+        </h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="hover:text-orange-500 cursor-pointer transition">About Us</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Digital Payments</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Daraz Donates</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Daraz Blog</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Terms & Conditions</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Privacy Policy</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">NTN_Number : 4012186-6</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Online Shopping App</li>
+          <li class="hover:text-orange-500 cursor-pointer transition">Sell on Daraz</li>
+        </ul>
+      </div>
+
+      <!-- App Store Icons -->
+      <div class="flex-1 min-w-[250px] flex flex-col items-center md:items-end">
+        <h3 class="text-lg font-semibold mb-3 text-gray-900 border-b-2 border-orange-500 w-max pb-1">
+          Get Our App
+        </h3>
+        <div class="flex gap-4 mb-3">
+          <div class="md:w-[180px] h-[60px] rounded-lg overflow-hidden shadow cursor-pointer hover:scale-105 transition">
+            <img src="appstore.png" alt="App Store" class="w-full h-full object-cover">
+          </div>
+          <div class="md:w-[180px] h-[60px] rounded-lg overflow-hidden shadow cursor-pointer hover:scale-105 transition">
+            <img src="google.png" alt="Google Play" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="md:w-[180px] h-[60px] rounded-lg overflow-hidden shadow cursor-pointer hover:scale-105 transition">
+          <img src="gallery.png" alt="Gallery App" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- 🟠 Final Footer Section -->
+  <footer class="w-full bg-white mt-10 border-t border-gray-200">
+    
+    <!-- Country & Follow Us Row -->
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 py-5">
+      <h4 class="text-gray-800 text-base font-medium mb-3 md:mb-0">
+        Daraz International
+      </h4>
+      <h4 class="text-gray-800 text-base font-medium">
+        Follow Us
+      </h4>
+    </div>
+
+    <!-- Flags + Social Icons -->
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 pb-6 border-t border-gray-100 pt-4">
+      
+      <!-- 🌍 Country Flags -->
+      <div class="flex gap-4 mb-4 md:mb-0">
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="f1.png" alt="Country 1" class="w-full h-full object-cover">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="f2.png" alt="Country 2" class="w-full h-full object-cover">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="f3.png" alt="Country 3" class="w-full h-full object-cover">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="f4.png" alt="Country 4" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <!-- 📱 Social Icons -->
+      <div class="flex gap-4">
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="face.png" alt="Facebook" class="w-full h-full object-cover">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="twi.png" alt="Twitter" class="w-full h-full object-cover">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="inst.png" alt="Instagram" class="w-full h-full object-cover">
+        </div>
+        <div class="w-[40px] h-[40px] rounded-full overflow-hidden border border-gray-200 shadow cursor-pointer hover:scale-105 transition">
+          <img src="you.png" alt="YouTube" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-200 py-4 text-center text-gray-600 text-sm">
+      © 2025 Daraz Clone | Designed by Muhammad Yasir MAIB
+    </div>
+
+  </footer>
+  
+</body>
+</html>
+
